@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#ffffff</color>
+    <color name="verde_lima">#00FF00</color>
+    <color name="morado">#ba55d3</color>
+    <color name="verde_primaver_medio">#00FA9A</color>
+    <color name="verde_primavera">#00FF7F</color>
+    <color name="turquesa_medio">#48d1cc</color>
+    <color name="azul_pizarra">#6a5acd</color>
+    <color name="indigo">#4B0082</color>
+    <color name="agua">#00FFFF</color>
+</resources>

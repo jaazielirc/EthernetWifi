@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Control | Duración | MAC 1 | MAC 2 | MAC 3 | Secuencia | MAC 4 | Datos | CRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx_trama"
+                android:textColor="@color/negro" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/versi"
+                    android:text="Versión: "
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:digits="10"
+                    android:id="@+id/version"
+                    android:text="11"
+                    android:maxLength="2" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/vesi"
+                    android:text="Hacia DS: "
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacia"
+                    android:inputType="number"
+                    android:digits="10"
+                    android:text="1"
+                    android:maxLength="1" />
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/veasi"
+                    android:text="Desde DS: "
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desde"
+                    android:text="0"
+                    android:inputType="number"
+                    android:digits="10"
+                    android:maxLength="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/vei"
+                    android:text="Reintentar: "
+                    android:gravity="center" />
+                <EditText
+                    android:inputType="number"
+                    android:digits="10"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reintentar"
+                    android:text="0"
+                    android:maxLength="1" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/veadsi"
+                    android:text="MF: "
+                    android:gravity="center" />
+                <EditText
+                    android:inputType="number"
+                    android:digits="10"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mf"
+                    android:text="0"
+                    android:maxLength="1" />
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/vedasasi"
+                    android:text="PWR: "
+                    android:gravity="center" />
+                <EditText
+                    android:inputType="number"
+                    android:digits="10"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pwr"
+                    android:text="0"
+                    android:maxLength="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/veidas"
+                    android:text="WEP: "
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wep"
+                    android:text="0"
+                    android:inputType="number"
+                    android:digits="10"
+                    android:maxLength="1" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/veassi"
+                    android:text="Más datos: "
+                    android:gravity="center" />
+                <EditText
+                    android:inputType="number"
+                    android:digits="10"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mas"
+                    android:text="0"
+                    android:maxLength="1" />
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/veadi"
+                    android:text="Ordenado: "
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orden"
+                    android:text="0"
+                    android:inputType="number"
+                    android:digits="10"
+                    android:maxLength="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/ss"
+                    android:text="Duración: "
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/duracion"
+                    android:text="0100"
+                    android:inputType="number"
+                    android:digits="10"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/eqwe"
+                    android:text="Secuencia: "
+                    android:gravity="center" />
+                <EditText
+                    android:inputType="number"
+                    android:digits="10"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secuencia"
+                    android:text="1010"
+                    android:maxLength="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/Tipo"
+                    android:text="Tipo:            "
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/tipo"
+                    android:entries="@array/tipo">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/stipo"
+                    android:text="Subtipo:      "
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/subtipo"
+                    android:entries="@array/administracion">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MAC_1"
+                    android:text="MAC Origen: "/>
+                <EditText
+                    android:digits="0123456789abcdefABCDEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/macOr"
+                    android:maxLength="12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MAC_2"
+                    android:text="MAC Destino: "/>
+                <EditText
+                    android:digits="0123456789abcdefABCDEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/macDes"
+                    android:maxLength="12" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MAC_3"
+                    android:text="MAC Transmisor: "/>
+                <EditText
+                    android:digits="0123456789abcdefABCDEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/macTx"
+                    android:maxLength="12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MAC_4"
+                    android:text="MAC Receptor: "/>
+                <EditText
+                    android:digits="0123456789abcdefABCDEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/macRx"
+                    android:maxLength="12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datoss"
+                android:text="Datos: "/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:id="@+id/datos"
+                android:layout_weight="1.16" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generar"
+                android:id="@+id/genera"
+                android:layout_weight="16" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/negro"
+                    android:id="@+id/salida"
+                    android:layout_height="match_parent" />
+            </ScrollView>
+        </LinearLayout>
+
+    </ScrollView>
